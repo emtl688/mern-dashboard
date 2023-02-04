@@ -211,4 +211,4 @@ const Sidebar = ({
     </Box>;
 };
 
-export default Sidebar
+export default Sidebar;
