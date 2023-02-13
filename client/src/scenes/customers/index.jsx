@@ -49,7 +49,7 @@ const Customers = () => {
         }
     ]
     
-    return <Box m="1.5rem 2.5rem">
+    return <Box m="1rem 2rem">
         <Header title="CUSTOMERS" subtitle="List of Customers" />
         <Box mt="40px" height="75vh"
             sx={{

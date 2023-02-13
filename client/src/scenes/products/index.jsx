@@ -30,13 +30,13 @@ const Product = ({
     return (
         <Card sx={{ backgroundImage: "none", backgroundColor: theme.palette.background.alt, borderRadius: "0.55rem" }}>
             <CardContent>
-                <Typography sx={{ fontSize: 14 }} color={theme.palette.secondary[700]} gutterBottom>
+                <Typography sx={{ fontSize: 14 }} color={theme.palette.secondary[400]} gutterBottom>
                     {category}
                 </Typography>
                 <Typography variant="h5" component="div">
                     {name}
                 </Typography>
-                <Typography sx={{ mb: "1.5rem" }} color={theme.palette.secondary[400]}>
+                <Typography sx={{ mb: "1.5rem" }} color={theme.palette.secondary[300]}>
                     ${Number(price).toFixed(2)}
                 </Typography>
                 <Rating value={rating} readOnly />
@@ -65,7 +65,7 @@ const Products = () => {
   const isNonMobile = useMediaQuery("(min-width: 1000px)");
 
   return (
-    <Box m="1.5rem 2.5rem">
+    <Box m="1rem 2rem">
       <Header title="PRODUCTS" subtitle="See your list of products" />
       {data || !isLoading ? (
         <Box
